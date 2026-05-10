@@ -6,23 +6,27 @@ Dark only. No light mode. The visual language is a dark technical workspace — 
 
 All colors are defined as CSS custom properties in `globals.css` and mapped to Tailwind tokens via `@theme inline`. Components must use these tokens — no hardcoded hex values or raw Tailwind color classes like `zinc-*`.
 
-| Role             | CSS Variable         | oklch Value (dark)          |
-| ---------------- | -------------------- | --------------------------- |
-| Page background  | `--background`      | oklch(0.145 0 0)            |
-| Surface          | `--card`             | oklch(0.205 0 0)            |
-| Primary text     | `--foreground`       | oklch(0.985 0 0)            |
-| Secondary text   | `--secondary-foreground` | oklch(0.985 0 0)        |
-| Muted text       | `--muted-foreground` | oklch(0.708 0 0)            |
-| Brand accent     | `--primary`          | oklch(0.922 0 0)            |
-| Brand accent fg  | `--primary-foreground` | oklch(0.205 0 0)         |
-| Default border   | `--border`           | oklch(1 0 0 / 10%)          |
-| Input border     | `--input`            | oklch(1 0 0 / 15%)          |
-| Ring             | `--ring`             | oklch(0.556 0 0)            |
-| Destructive      | `--destructive`      | oklch(0.704 0.191 22.216)   |
-| Sidebar          | `--sidebar`          | oklch(0.205 0 0)            |
-| Sidebar fg       | `--sidebar-foreground` | oklch(0.985 0 0)         |
+| Role             | CSS Variable           | Hex / Value               |
+| ---------------- | ---------------------- | ------------------------- |
+| Page background  | `--bg-base`            | `#080809`                 |
+| Surface          | `--bg-surface`         | `#111114`                 |
+| Elevated surface | `--bg-elevated`        | `#18181c`                 |
+| Subtle surface   | `--bg-subtle`          | `#1e1e23`                 |
+| Default border   | `--border-default`     | `#2a2a30`                 |
+| Subtle border    | `--border-subtle`      | `#3a3a42`                 |
+| Primary text     | `--text-primary`       | `#f0f0f4`                 |
+| Secondary text   | `--text-secondary`     | `#c0c0cc`                 |
+| Muted text       | `--text-muted`         | `#808090`                 |
+| Faint text       | `--text-faint`         | `#505060`                 |
+| Brand accent     | `--accent-primary`     | `#00c8d4` (cyan)          |
+| Brand dim        | `--accent-primary-dim` | `rgba(0, 200, 212, 0.12)` |
+| AI accent        | `--accent-ai`          | `#6457f9` (indigo-purple) |
+| AI text          | `--accent-ai-text`     | `#8b82ff`                 |
+| Error            | `--state-error`        | `#ff4d4f`                 |
+| Success          | `--state-success`      | `#34d399`                 |
+| Warning          | `--state-warning`      | `#fbbf24`                 |
 
-Tailwind utility names map to these variables. Use `bg-background`, `bg-card`, `text-foreground`, `text-muted-foreground`, `border-border`, `text-primary`, `bg-primary`, etc.
+Tailwind utility names map to these variables. Use `bg-base`, `bg-surface`, `text-copy-primary`, `text-copy-muted`, `border-surface-border`, `text-brand`, `bg-accent-dim`, etc.
 
 ## Typography
 
